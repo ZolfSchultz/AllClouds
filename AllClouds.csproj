@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <UserSecretsId>ddf1ff12-74b4-49b3-97f7-f3af8533a72a</UserSecretsId>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ApplicationIcon>free-icon-clouds-128853.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>True</Optimize>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <Optimize>True</Optimize>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="free-icon-clouds-128853.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DokanNet" Version="2.0.5.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="7.0.0" />
+    <PackageReference Include="WPF-UI" Version="2.0.3" />
+  </ItemGroup>
+
+</Project>
